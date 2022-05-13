@@ -42,10 +42,13 @@ module.exports = defineConfig({
       //   display: 'standalone'
       //   theme_color: pwa.themeColor
 
-      display: "standalone",
-      // 在 android chrome 點擊更多:
-      // - 顯示 [ 安裝應用程式 ] <-- fullscreen | standalone | minimal-ui
-      // - 顯示 [ 加入主畫面 ] <-- browser
+      display: "fullscreen",
+      // iOS safari 加入主畫面:
+      // - fullscreen | standalone --> 應用程式的方式開啟
+      // - minimal-ui | browser --> 瀏覽器的方式開啟
+      // android chrome 右上角點擊更多:
+      // - fullscreen | standalone | minimal-ui --> 顯示 [ 安裝應用程式 ]
+      // - browser --> 顯示 [ 加入主畫面 ]
       start_url: "./?utm_source=web_app_manifest",
       // start_url: "/?utm_source=homescreen", // ref: https://app.starbucks.com/
     },
