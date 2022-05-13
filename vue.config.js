@@ -42,7 +42,7 @@ module.exports = defineConfig({
       //   display: 'standalone'
       //   theme_color: pwa.themeColor
 
-      display: "minimal-ui",
+      display: "standalone",
       // 在 android chrome 點擊更多:
       // - 顯示 [ 安裝應用程式 ] <-- fullscreen | standalone | minimal-ui
       // - 顯示 [ 加入主畫面 ] <-- browser
